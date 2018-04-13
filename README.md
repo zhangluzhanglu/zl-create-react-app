@@ -22,7 +22,8 @@
 <strong>4. 让我们的项目变得自动化</strong>
 
 自动化含义为：当我们修改代码后，整个项目能够自动构建，执行上面三步，甚至是热更新到浏览器，而不需要我们自己去手动执行命令
-<p style="text-align: center;"><span style="color: #800000;"><strong>3,4两步既可以安装watch模块监听代码状态来自动化，也可以通过安装Gulp或Grunt来自动化构建</strong></span></p>
+
+                 3,4两步既可以安装watch模块监听代码状态来自动化，也可以通过安装Gulp或Grunt来自动化构建
 
 <strong>5、压缩代码，优化图片</strong>
 
