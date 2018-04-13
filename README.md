@@ -1,7 +1,7 @@
 # zl-create-react-app
 一个基于windows下bat脚本的react脚手架
 
-<h4><span style="color: #800000;">流程如下：</span></h4>
+<h4><span style="color: red;text-align:red;">脚手架构建流程如下：</span></h4>
 <strong>1、 创建应用模板</strong>
 
 和我们普通开发一样，创建index.html文件，创建几个目录如,css,js,img,script等，当然还要对目录细分一下，以便更合理。
@@ -45,7 +45,7 @@
 
 <hr />
 
-<h1 style="text-align: center;"><span style="color: #ff0000;">详细举例说明此流程</span></h1>
+<h1 style="text-align: center;"><span style="color: #ff0000;">脚手架构建流程实例如下</span></h1>
 <h2>1、创建模板应用</h2>
 和我们传统的web项目开发一样，主要是建立各种项目目录，如下：
 
