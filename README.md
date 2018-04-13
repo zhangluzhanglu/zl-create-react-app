@@ -4,7 +4,7 @@
 <h4><span style="color: #800000;">流程如下：</span></h4>
 <strong>1、 创建应用模板</strong>
 
-也就是和我们普通开发一样，创建index.html文件，创建几个目录如,css,js,img,script等，当然还要对目录细分一下，以便更合理。
+和我们普通开发一样，创建index.html文件，创建几个目录如,css,js,img,script等，当然还要对目录细分一下，以便更合理。
 
 <strong>2、 安装必备的工具</strong>
 
@@ -14,15 +14,21 @@
 
 使用这些工具处理我们的代码，构建我们的项目。
 
-主要做三件事：1. es6/7,jsx等语法转义。 2. Js代码打包为一个build.js文件   3.对css打包为一个build.css文件
+主要做三件事：
+1. es6/7,jsx等语法转义（babel）
+2. Js代码打包为一个build.js文件(browserify/webpack)  
+3. 对css打包拼接为一个build.css文件(拼接到一起就可以了，不需要安装其他模块)
 
 <strong>4. 让我们的项目变得自动化</strong>
 
-当我们修改代码后，整个项目能够自动构建，执行上面三步，甚至是热跟新到浏览器，而不需要我们自己去手动执行命令
-<p style="text-align: center;"><span style="color: #800000;"><strong>3,4两步既可以安装swatch监听自己原生的写自动化脚本，也可以通过安装Gulp或Grunt来自动化构建</strong></span></p>
-<strong>5、一些额外的处理</strong>
+自动化含义为：当我们修改代码后，整个项目能够自动构建，执行上面三步，甚至是热更新到浏览器，而不需要我们自己去手动执行命令
+<p style="text-align: center;"><span style="color: #800000;"><strong>3,4两步既可以安装watch模块监听代码状态来自动化，也可以通过安装Gulp或Grunt来自动化构建</strong></span></p>
 
-主要有代码压缩，图像优化等。可以使用js压缩工具:uglify和css压缩工具cssshrink来处理，实现压缩代码，优化图片，复制文件到内容分发网络。
+<strong>5、压缩代码，优化图片</strong>
+
+代码打包完成后，我们还应该进行代码压缩，图像优化等。
+可以使用js压缩工具:uglify和css压缩工具cssshrink来处理，实现压缩代码，优化图片，复制文件到内容分发网络。
+其实我们还可以做些代码混悉，以提高安全性等。
 
 <strong>6. 发布</strong>
 
@@ -32,13 +38,14 @@
 
 <strong>总结下流程：</strong>
 
-创建我们的模板应用---》安装项目必备模块工具等---》使用这些工具模块自动构建代码--》开发完成---》代码压缩，图片优化等处理------》上线发布
+创建模板应用---》安装目必备模块---》使用安装的模块自动构建项目--》代码压缩，图片优化------》上线发布
+
 <p style="text-align: center;">           <strong>这些流程，rcreate-react-app等脚手架都帮我做好了，我们可以专注于代码的开发。</strong></p>
 
 
 <hr />
 
-<h1 style="text-align: center;"><span style="color: #ff0000;">使用实例</span></h1>
+<h1 style="text-align: center;"><span style="color: #ff0000;">详细举例说明此流程</span></h1>
 <h2>1、创建模板应用</h2>
 和我们传统的web项目开发一样，主要是建立各种项目目录，如下：
 
