@@ -46,7 +46,7 @@
 
 <hr />
 
-<h1 style="text-align: center;"><span style="color: #ff0000;">脚手架构建流程实例如下</span></h1>
+<h1 style="text-align: center;"><span style="color: #ff0000;">构建实例如下</span></h1>
 <h2>1、创建模板应用</h2>
 和我们传统的web项目开发一样，主要是建立各种项目目录，如下：
 
@@ -155,10 +155,12 @@ type css\*.css css\components\*.css &gt; build.css //拼接所有css文件为一
 <br/>
 <h1>使用方式</h1>
 方式一：
+<pre>
 1. 将此项目下载到本地
 2. npm run init    在项目根目录下（index.html文件所在位置）执行此命令，初始化这个项目，安装各种依赖包。
 3. npm run build   安装好依赖包后执行此命令，  开始对代码进行转义打包拼接。
 4. 双击index.html  这样即可在浏览器里面打开，看到demo组件的运行。脚手架跑起来了。
 5. npm run watch   执行此命令，监听项目代码的改变，一旦代码发生变化，整个项目自动重新构建。
 6. npm run publish 此命令我还没写好，无法使用.他主要用于将代码进行压缩优化混悉的，执行此命令后会生成一个__publish文件，然后把里面的代码复制到服务器即可发布，这也是最终的文件
+</pre>
 
