@@ -1,6 +1,6 @@
 # zl-create-react-app
 一个基于windows下bat脚本的react脚手架
-<h1 style="text-align: center;"><strong><span style="color: #800000;">REACT相关------- 手动构建React脚手架</span></strong></h1>
+
 <h4><span style="color: #800000;">流程如下：</span></h4>
 <strong>1、 创建应用模板</strong>
 
@@ -123,10 +123,9 @@ let demoIcoAddr="images/welcome.png";
 如下：
 <ol>
  	<li><strong>将这几条打包拼接命令放入到一个脚本文件[<span style="color: #800000;"><span style="color: #ff0000;">build.bat</span>]</span>中</strong>
-<pre>babel --presets react,es2015 js\source -d js\build //转义js文件
-
+<pre>
+babel --presets react,es2015 js\source -d js\build //转义js文件
 browserify js\build\app.js -o build.js //打包文件（将所有app.js文件依赖的js模块全部打包到一个文件中）
-
 type css\*.css css\components\*.css &gt; build.css //拼接所有css文件为一个文件</pre>
 </li>
  	<li><strong><strong>安装watch模块到本地，然后对js/css文件进行监听，一旦监听到js/css修改了，就执行打包拼接脚本build.bat</strong></strong>（注意：执行脚本时注意脚本文件路径应该正确，且mac是正斜杠/,window是反斜杠\,而且有可能还需要使用转义）
@@ -141,8 +140,6 @@ type css\*.css css\components\*.css &gt; build.css //拼接所有css文件为一
 
 <strong>5.代码压缩，图像优化</strong>
 
-上面的几步已经让我们的项目完成了，现在我们即将进行发布，不过发布前先要做些代码的压缩和图像的优化等工作
+上面的几步已经让我们的项目完成了，现在我们即将进行发布，不过发布前先要做些代码的压缩和图像的优化等工作<b>待续...</b>
 
-方式如下：
 
-1、
